@@ -1,0 +1,26 @@
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class PossibleNumbers {
+	List <Integer> listNumbers;
+	
+	public PossibleNumbers(){
+		listNumbers = new LinkedList <Integer>();
+		for(int i = 0; i <= 9; i++ )
+			listNumbers.add(Integer.valueOf(i));
+		
+	}
+	public List<Integer> getListNumbers() {
+		// TODO Auto-generated method stub
+		
+		return listNumbers;
+	}
+
+	public void removeNumber(Integer value) {
+		// TODO Auto-generated method stub
+		listNumbers.remove(value);
+		
+	}
+	  
+}

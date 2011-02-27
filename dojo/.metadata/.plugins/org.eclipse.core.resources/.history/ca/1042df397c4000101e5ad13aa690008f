@@ -1,0 +1,10 @@
+
+public class PossibleNumbersFactory {
+
+
+	public static PossibleNumbers getInstance() {
+		PossibleNumbers pn = new PossibleNumbers();
+		return pn;
+	}
+
+}

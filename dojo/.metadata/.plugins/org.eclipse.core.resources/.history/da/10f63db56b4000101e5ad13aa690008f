@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class ReaderOcr {
+
+	public static String[] readOcrFromFile(String fileName) {
+		File file = openFile(fileName);
+		
+		FileInputStream fis = new FileInputStream(file);
+		Scanner scanner = new Scanner(fis);
+		String[] ocrLines = new String[4];
+		for(int i = 0 ; i < 4 ; ++i) {
+			
+		}
+		
+		
+	}
+
+	private static File openFile(String fileName) {
+		return new File(fileName);
+	}
+
+}

@@ -1,0 +1,12 @@
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+
+public class ReaderOcrTest {
+	@Test
+	public void testMethodReader() {
+		String[] ocrLines = ReaderOcr.readOcrFromFile();
+		assertTrue(ocrLines.length == 3);
+	}
+}

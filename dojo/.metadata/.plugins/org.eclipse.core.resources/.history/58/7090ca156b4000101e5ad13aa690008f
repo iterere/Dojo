@@ -1,0 +1,14 @@
+import java.io.File;
+
+public class ReaderOcr {
+
+	public static String[] readOcrFromFile(String fileName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private File openFile(String fileName) {
+		return new File(fileName);
+	}
+
+}

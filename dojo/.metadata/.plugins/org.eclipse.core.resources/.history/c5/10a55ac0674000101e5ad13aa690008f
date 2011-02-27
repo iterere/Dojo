@@ -1,0 +1,51 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+import org.junit.Test;
+
+public class PossibleNumbersTest {
+	@Test
+	public void testConstructor() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		assertNotNull(pn);
+
+	}
+
+	@Test
+	public void testConstructorWithNumbersNull() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		List<Integer> list = pn.getListNumbers();
+		assertNotNull(list);
+	}
+
+	@Test
+	public void testConstructorWithNumbers() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		List<Integer> list = pn.getListNumbers();
+		for (int i = 0; i <= 9; ++i) {
+			assertEquals(Integer.valueOf(i), list.get(i));
+		}
+	}
+
+	@Test
+	public void testMethodRemoveNumber() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		Integer value = 0;
+		pn.removeNumber(value);
+		for (Integer i : pn.getListNumbers()) {
+			assertTrue(i != value);
+		}
+	}
+	public void testMethodRemoveTwoNumbers()	{
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		for(int j = 0; j <= 1; j++ ){
+			pn.removeNumber(Integer.valueOf(j));
+		}
+		
+		for (Integer i : pn.getListNumbers()) {
+			assertTrue(i != value);
+		}
+	}
+}

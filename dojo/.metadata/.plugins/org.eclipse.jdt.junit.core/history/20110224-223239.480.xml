@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolveOcrTest" project="Ocr" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="SolveOcrTest" time="0.006">
+    <testcase name="testDivideNinePeacesNull" classname="SolveOcrTest" time="0.002"/>
+    <testcase name="testDivideNinePeacesSize" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testDivideNinePeaces" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithOneUnderlineOnTheFirstLine" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithThreeSpacesOnTheFirstLine" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithTwoSpacesAndPipeOnTheSecondLine" classname="SolveOcrTest" time="0.0"/>
+  </testsuite>
+</testrun>

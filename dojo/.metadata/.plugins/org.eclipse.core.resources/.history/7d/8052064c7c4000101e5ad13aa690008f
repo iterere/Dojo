@@ -1,0 +1,71 @@
+package com.iterere.dojo.ocr;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+import org.junit.Test;
+
+import com.iterere.dojo.ocr.PossibleNumbers;
+import com.iterere.dojo.ocr.PossibleNumbersFactory;
+
+public class PossibleNumbersTest {
+	@Test
+	public void testConstructor() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		assertNotNull(pn);
+
+	}
+
+	@Test
+	public void testConstructorWithNumbersNull() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		List<Integer> list = pn.getListNumbers();
+		assertNotNull(list);
+	}
+
+	@Test
+	public void testConstructorWithNumbers() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		List<Integer> list = pn.getListNumbers();
+		for (int i = 0; i <= 9; ++i) {
+			assertEquals(Integer.valueOf(i), list.get(i));
+		}
+	}
+
+	@Test
+	public void testMethodRemoveNumber() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		Integer value = 0;
+		pn.removeNumber(value);
+		for (Integer i : pn.getListNumbers()) {
+			assertTrue(i != value);
+		}
+	}
+	@Test
+	public void testMethodRemoveTwoNumbers()	{
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		for(int value = 0; value <= 1; value++ ){
+			pn.removeNumber(Integer.valueOf(value));
+			for (Integer i : pn.getListNumbers()) {
+				assertTrue(i != Integer.valueOf(value));
+			}
+		}		
+	}
+	@Test
+	public void testMethodCheckFalse(){
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		for(int value = 0; value <= 1; value++ ){
+			pn.removeNumber(Integer.valueOf(value));			
+			assertTrue(!pn.check());			
+		}
+	}
+	@Test
+	public void testMethodCheckTrue(){
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		for(int value = 0; value <= 8; value++ ){
+			pn.removeNumber(Integer.valueOf(value));	
+		}		
+		assertTrue(pn.check());			
+	}
+}

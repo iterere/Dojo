@@ -1,0 +1,11 @@
+
+public class PossibleNumbersFactory {
+
+
+	public static PossibleNumbers getInstance() {
+		// TODO Auto-generated method stub
+		PossibleNumbers pn = new PossibleNumbers();
+		return pn;
+	}
+
+}

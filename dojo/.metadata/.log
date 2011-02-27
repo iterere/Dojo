@@ -1,0 +1,99 @@
+!SESSION 2011-02-24 19:52:01.044 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data D:\projetos\dojo -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.help.base 4 0 2011-02-24 22:12:31.570
+!MESSAGE An error occured while pre-processing help XHTML document "/org.eclipse.tm.terminal.view/doc/html/02_terminal_page.html" for search indexing
+!STACK 0
+org.xml.sax.SAXParseException: The element type "p" must be terminated by the matching end-tag "</p>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.XMLProcessor.process(XMLProcessor.java:49)
+	at org.eclipse.help.internal.xhtml.DynamicXHTMLProcessor.process(DynamicXHTMLProcessor.java:76)
+	at org.eclipse.help.internal.search.XHTMLSearchParticipant.preprocess(XHTMLSearchParticipant.java:103)
+	at org.eclipse.help.search.SearchParticipantXML.addDocument(SearchParticipantXML.java:296)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:221)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:252)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:159)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:106)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:666)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:640)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:31)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.help.base 4 4 2011-02-24 22:12:37.157
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2011-02-24 22:12:37.157
+!MESSAGE Exception occurred while adding document /org.eclipse.tm.terminal.view/doc/html/02_terminal_page.html to index.
+!STACK 0
+org.xml.sax.SAXParseException: Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at org.eclipse.help.search.SearchParticipantXML.addDocument(SearchParticipantXML.java:297)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:221)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:252)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:159)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:106)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:666)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:640)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:31)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2011-02-24 23:23:04.936
+!MESSAGE Server returned lastModified <= 0 for http://java.sun.com/j2ee/javaserverfaces/download.html/content.jar
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2011-02-24 23:23:07.827
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://java.sun.com/j2ee/javaserverfaces/download.html.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:128)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:746)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:115)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:100)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: http://java.sun.com/j2ee/javaserverfaces/download.html is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	... 10 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2011-02-24 23:23:07.828
+!MESSAGE Unable to read repository at http://java.sun.com/j2ee/javaserverfaces/download.html.
+!STACK 0
+java.io.IOException: http://java.sun.com/j2ee/javaserverfaces/download.html is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:746)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:115)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:100)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2011-02-24 23:23:12.060
+!MESSAGE Server returned lastModified <= 0 for http://java.sun.com/j2ee/javaserverfaces/download.html/content.jar

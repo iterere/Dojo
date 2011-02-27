@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolveOcrTest" project="Ocr" tests="13" started="13" failures="0" errors="0" ignored="0">
+  <testsuite name="SolveOcrTest" time="0.009">
+    <testcase name="testDivideNinePeacesNull" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testDivideNinePeacesSize" classname="SolveOcrTest" time="0.002"/>
+    <testcase name="testDivideNinePeaces" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithOneUnderlineOnTheFirstLine" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithThreeSpacesOnTheFirstLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithTwoSpacesAndPipeOnTheSecondLine" classname="SolveOcrTest" time="0.001"/>
+    <testcase name="testCutMethodWithOneSpacesUndelineAndPipeOnTheSecondLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithPipeUndelineAndPipeOnTheSecondLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithPipeUndelineAndOneSpaceOnTheSecondLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithTwoSpacesAndPipeOnTheThirdLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithOneSpacesUndelineAndPipeOnTheThirdLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithPipeUndelineAndPipeOnTheThirdLine" classname="SolveOcrTest" time="0.0"/>
+    <testcase name="testCutMethodWithPipeUndelineAndOneSpaceOnTheThirdLine" classname="SolveOcrTest" time="0.001"/>
+  </testsuite>
+</testrun>

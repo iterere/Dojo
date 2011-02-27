@@ -1,0 +1,15 @@
+package com.iterere.dojo.ocr;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+import com.iterere.dojo.ocr.service.ReaderOcr;
+
+
+public class ReaderOcrTest {
+	@Test
+	public void testMethodReader() {
+		String[] ocrLines = ReaderOcr.readOcrFromFile();
+		assertTrue(ocrLines.length == 3);
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SolveOcrTest" project="Ocr" tests="3" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="SolveOcrTest" incomplete="true">
+    <testcase name="testDivideNinePeacesNull" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testDivideNinePeacesSize" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testDivideNinePeaces" classname="SolveOcrTest" incomplete="true"/>
+  </testsuite>
+</testrun>

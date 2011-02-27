@@ -1,0 +1,13 @@
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class PossibleNumbers {
+
+	public List<Integer> getListNumbers() {
+		// TODO Auto-generated method stub
+		List <Integer> list = new LinkedList<Integer>();
+		return list;
+	}
+	  
+}

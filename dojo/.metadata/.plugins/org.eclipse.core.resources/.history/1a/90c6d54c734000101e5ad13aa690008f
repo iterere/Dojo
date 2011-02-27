@@ -1,0 +1,31 @@
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class SolveOcrTest {
+	@Test
+	public void testDivideNinePeacesNull() {
+		String[] ocrLines = ReaderOcr.readOcrFromFile();
+		String[] peaces = SolveOcr.divideNinePeaces(ocrLines[0]);
+		assertNotNull(peaces);
+	}
+
+	@Test
+	public void testDivideNinePeacesSize() {
+		String[] ocrLines = ReaderOcr.readOcrFromFile();
+		String[] peaces = SolveOcr.divideNinePeaces(ocrLines[0]);
+
+		assertTrue(peaces.length == 9);
+
+	}
+
+	@Test
+	public void testDivideNinePeaces() {
+		String[] ocrLines = ReaderOcr.readOcrFromFile();
+		String[] peaces = SolveOcr.divideNinePeaces(ocrLines[0]);
+		for (String s : peaces) {
+			assertTrue(s.length() == 3);
+		}
+	}
+}

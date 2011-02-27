@@ -1,0 +1,10 @@
+import org.junit.Test;
+
+
+public class ReaderOcrTest {
+	@Test
+	public void testMethodReader() {
+		String[] lines = ReaderOcr.readLinesFromFile("test.txt");
+		assertTrue(lines.length == 4);
+	}
+}

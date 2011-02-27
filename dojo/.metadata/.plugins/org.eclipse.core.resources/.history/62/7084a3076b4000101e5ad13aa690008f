@@ -1,0 +1,9 @@
+
+public class ReaderOcr {
+
+	public static String[] readOcrFromFile(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

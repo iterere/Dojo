@@ -1,0 +1,28 @@
+
+
+public class SolveOcr {
+
+	public static String[] divideNinePeaces(String ocrLine) {
+		String[] peaces = new String[9];
+		for(int i =0, j =0; i < ocrLine.length() && j < 9 ; i+=3, j++) {
+			peaces[j] = ocrLine.substring(i, i+3);
+		}
+		return peaces;
+		
+	}
+
+	public static void cut(PossibleNumbers pn, String peace, int i) {
+		switch (i){
+		case 1:
+			if(" _ ".equals(peace)){
+				pn.removeNumbers(1,4);
+			}
+			break;
+		case 2:			
+			break;
+		case 3:
+			break;
+		}
+	}
+
+}

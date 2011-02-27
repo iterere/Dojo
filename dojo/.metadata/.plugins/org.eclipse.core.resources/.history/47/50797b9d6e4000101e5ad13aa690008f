@@ -1,0 +1,12 @@
+import java.util.regex.Pattern;
+
+
+public class SolveOcr {
+
+	public static String[] divideNinePeaces(String ocrLine) {
+		
+		return ocrLine.split("[ |_]3");
+		
+	}
+
+}

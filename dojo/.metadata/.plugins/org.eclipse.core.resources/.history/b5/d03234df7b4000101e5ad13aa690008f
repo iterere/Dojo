@@ -1,0 +1,5 @@
+public class UseSolveOcr {
+	public static void main(String... args) {
+		SolveOcr.solve(ReaderOcr.readOcrFromFile());
+	}
+}

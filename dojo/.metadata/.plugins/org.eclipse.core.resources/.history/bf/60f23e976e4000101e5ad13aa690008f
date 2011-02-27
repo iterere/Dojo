@@ -1,0 +1,11 @@
+import java.util.regex.Pattern;
+
+
+public class SolveOcr {
+
+	public static String[] divideNinePeaces(String ocrLine) {
+		Pattern p = new Pattern.compile("");
+		String[] peaces = 
+	}
+
+}

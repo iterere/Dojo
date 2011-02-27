@@ -1,0 +1,11 @@
+
+
+public class SolveOcr {
+
+	public static String[] divideNinePeaces(String ocrLine) {
+		for(int i =0 ; i < ocrLine.length() ; i+=3)
+		return ocrLine.split("... ");
+		
+	}
+
+}

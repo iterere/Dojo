@@ -1,0 +1,84 @@
+package com.iterere.dojo.ocr;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.iterere.dojo.ocr.bean.PossibleNumbers;
+
+public class SolveOcr {
+
+	private static final Integer MAX_DIGIT = 9;
+
+	public static String[] divideNinePeaces(String ocrLine) {
+		String[] peaces = new String[9];
+		for (int i = 0, j = 0; i < ocrLine.length() && j < 9; i += 3, j++) {
+			peaces[j] = ocrLine.substring(i, i + 3);
+		}
+		return peaces;
+
+	}
+
+	public static void cut(PossibleNumbers pn, String peace, int i) {
+		switch (i) {
+		case 1:
+			if (" _ ".equals(peace)) {
+				pn.removeNumbers(1, 4);
+			} else if ("   ".equals(peace)) {
+				pn.removeNumbers(0, 2, 3, 5, 6, 7, 8, 9);
+			}
+
+			break;
+		case 2:
+			if ("  |".equals(peace)) {
+				pn.removeNumbers(0, 2, 3, 4, 5, 6, 8, 9);
+			} else if (" _|".equals(peace)) {
+				pn.removeNumbers(0, 1, 4, 5, 6, 7, 8, 9);
+			} else if ("|_|".equals(peace)) {
+				pn.removeNumbers(0, 1, 2, 3, 5, 6, 7);
+			} else if ("|_ ".equals(peace)) {
+				pn.removeNumbers(0, 1, 2, 3, 4, 7, 8, 9);
+			}
+			break;
+		case 3:
+			if ("  |".equals(peace)) {
+				pn.removeNumbers(0, 2, 3, 5, 6, 8, 9);
+			} else if (" _|".equals(peace)) {
+				pn.removeNumbers(0, 1, 2, 4, 6, 7, 8);
+			} else if ("|_|".equals(peace)) {
+				pn.removeNumbers(1, 2, 3, 4, 5, 7, 9);
+			} else if ("|_ ".equals(peace)) {
+				pn.removeNumbers(0, 1, 3, 4, 5, 6, 7, 8, 9);
+			}
+			break;
+		}
+	}
+
+	public static Integer solve(String[] ocrLines) {
+		List<PossibleNumbers> pns = createPossibleNumbers();
+		for (int i = 1; i <= ocrLines.length; i++) {
+			String[] peaces = divideNinePeaces(ocrLines[i - 1]);
+			for (int j = 0; j < peaces.length; j++) {
+				cut(pns.get(j), peaces[j], i);
+			}
+		}
+
+		return possibleToInteger(pns);
+	}
+
+	private static Integer possibleToInteger(List<PossibleNumbers> pns) {
+		StringBuilder sb = new StringBuilder();
+		for (PossibleNumbers pn : pns) {
+			sb.append(pn.getListNumbers().get(0));
+		}
+
+		return Integer.valueOf(sb.toString());
+	}
+
+	private static List<PossibleNumbers> createPossibleNumbers() {
+		List<PossibleNumbers> nps = new ArrayList<PossibleNumbers>();
+		for (int i = 0; i < MAX_DIGIT; i++) {
+			nps.add(PossibleNumbersFactory.getInstance());
+		}
+		return nps;
+	}
+
+}

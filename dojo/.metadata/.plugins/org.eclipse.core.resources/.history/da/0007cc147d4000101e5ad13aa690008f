@@ -1,0 +1,13 @@
+package com.iterere.dojo.ocr.factory;
+
+import com.iterere.dojo.ocr.bean.PossibleNumbers;
+
+public class PossibleNumbersFactory {
+
+
+	public static PossibleNumbers getInstance() {
+		PossibleNumbers pn = new PossibleNumbers();
+		return pn;
+	}
+
+}

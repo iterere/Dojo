@@ -1,0 +1,6 @@
+package com.iterere.dojo.ocr;
+public class UseSolveOcr {
+	public static void main(String... args) {
+		System.out.println(SolveOcr.solve(ReaderOcr.readOcrFromFile()));
+	}
+}

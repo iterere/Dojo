@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Ocr" project="Ocr" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="SolveOcrTest" time="17.468">
+    <testcase name="testDivideNinePeacesNull" classname="SolveOcrTest" time="11.309"/>
+    <testcase name="testDivideNinePeacesSize" classname="SolveOcrTest" time="0.661"/>
+    <testcase name="testDivideNinePeaces" classname="SolveOcrTest" time="5.498"/>
+  </testsuite>
+  <testsuite name="PossibleNumbersTest" time="0.015">
+    <testcase name="testConstructor" classname="PossibleNumbersTest" time="0.003"/>
+    <testcase name="testConstructorWithNumbersNull" classname="PossibleNumbersTest" time="0.0"/>
+    <testcase name="testConstructorWithNumbers" classname="PossibleNumbersTest" time="0.001"/>
+    <testcase name="testMethodRemoveNumber" classname="PossibleNumbersTest" time="0.001"/>
+    <testcase name="testMethodRemoveTwoNumbers" classname="PossibleNumbersTest" time="0.005"/>
+    <testcase name="testMethodCheckFalse" classname="PossibleNumbersTest" time="0.003"/>
+    <testcase name="testMethodCheckTrue" classname="PossibleNumbersTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="ReaderOcrTest" time="0.003">
+    <testcase name="testMethodReader" classname="ReaderOcrTest" time="0.003"/>
+  </testsuite>
+</testrun>

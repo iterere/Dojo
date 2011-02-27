@@ -1,0 +1,11 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class PossibleNumbersTest {
+	@Test
+	public void testConstructor() {
+		PossibleNumbers pn = PossibleNumbersFactory.getInstance();
+		assertNotNull(pn);
+	}
+}

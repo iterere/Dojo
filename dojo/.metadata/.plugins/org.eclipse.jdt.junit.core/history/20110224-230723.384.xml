@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Ocr" project="Ocr" tests="22" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="SolveOcrTest" incomplete="true">
+    <testcase name="testSolve" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testDivideNinePeacesNull" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testDivideNinePeacesSize" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testDivideNinePeaces" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithOneUnderlineOnTheFirstLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithThreeSpacesOnTheFirstLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithTwoSpacesAndPipeOnTheSecondLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithOneSpaceUndelineAndPipeOnTheSecondLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithPipeUndelineAndPipeOnTheSecondLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithPipeUndelineAndOneSpaceOnTheSecondLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithTwoSpacesAndPipeOnTheThirdLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithOneSpacesUndelineAndPipeOnTheThirdLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithPipeUndelineAndPipeOnTheThirdLine" classname="SolveOcrTest" incomplete="true"/>
+    <testcase name="testCutMethodWithPipeUndelineAndOneSpaceOnTheThirdLine" classname="SolveOcrTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="PossibleNumbersTest" incomplete="true">
+    <testcase name="testConstructor" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testConstructorWithNumbersNull" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testConstructorWithNumbers" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testMethodRemoveNumber" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testMethodRemoveTwoNumbers" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testMethodCheckFalse" classname="PossibleNumbersTest" incomplete="true"/>
+    <testcase name="testMethodCheckTrue" classname="PossibleNumbersTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="ReaderOcrTest" incomplete="true">
+    <testcase name="testMethodReader" classname="ReaderOcrTest" incomplete="true"/>
+  </testsuite>
+</testrun>

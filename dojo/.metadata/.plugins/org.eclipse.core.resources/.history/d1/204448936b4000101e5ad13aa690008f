@@ -1,0 +1,15 @@
+import java.io.File;
+
+public class ReaderOcr {
+
+	public static String[] readOcrFromFile(String fileName) {
+		File file = openFile(fileName);
+		
+		
+	}
+
+	private static File openFile(String fileName) {
+		return new File(fileName);
+	}
+
+}
